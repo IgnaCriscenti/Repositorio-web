@@ -1,0 +1,43 @@
+.container{
+    background-color: rgb(59, 61, 61);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 0 50px;
+}
+
+a[title="Instagram"], a[Title="X"], a[Title="Facebook"], 
+a[Title="YouTube"], a[Title="TikTok"],a[Title="Twitch"],
+a[Title="Spotify"]{
+    color: greenyellow;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.social-links, .user-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px; 
+}
+
+#logo-argentina{
+    max-width: 19px;
+    min-width: 19px;
+}
+
+.user-display{
+    color: white;
+}
+
+.btn-subscribe {
+    background-color: rgb(255, 145, 0);
+    padding: 5px 15px; 
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px; 
+    font-size: 12px;
+}
