@@ -1,3 +1,4 @@
+/*nav*/
 .container{
     background-color: rgb(59, 61, 61);
     display: flex;
@@ -5,12 +6,13 @@
     align-items: center;
     height: 40px;
     padding: 0 50px;
+    font-weight: bold;
 }
 
 a[title="Instagram"], a[Title="X"], a[Title="Facebook"], 
 a[Title="YouTube"], a[Title="TikTok"],a[Title="Twitch"],
 a[Title="Spotify"]{
-    color: greenyellow;
+    color: rgba(172, 255, 47, 0.716);
     font-size: 18px;
     text-decoration: none;
 }
@@ -30,6 +32,7 @@ a[Title="Spotify"]{
 
 .user-display{
     color: white;
+    text-decoration: none;
 }
 
 .btn-subscribe {
@@ -41,3 +44,446 @@ a[Title="Spotify"]{
     border-radius: 4px; 
     font-size: 12px;
 }
+
+.arg{
+    color: white;
+}
+
+.portada-ole{
+    background-color: rgb(156, 188, 76);
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#logo-ole{
+    height: 45px;
+}
+
+.menu-icon{
+    color: white;
+    font-size: 24px;
+    
+}
+
+.fa-chevron-down{
+    color: white;
+}
+
+.noticias-del-dia{
+    display: flex;
+    align-items: stretch; 
+    border-bottom: 1px solid #ccc;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    height: 35px; 
+    padding-right: 55px;
+}
+
+#not-del-dia {
+    color: rgb(31, 144, 31);
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    padding: 15px 15px;
+    white-space: nowrap;
+}
+
+.noticias-lista {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto; 
+}
+
+.noticias-lista li {
+    display: flex;
+    align-items: center;
+    
+}
+
+.noticia {
+    text-decoration: none;
+    color: #484848;
+    font-size: 11px;
+    padding: 0 15px;
+    transition: color 0.2s;
+}
+
+
+/*articulo*/
+.titulo{
+    font-weight: 900;
+    text-align: center;
+    padding: 50px 200px 30px 200px;
+    font-size: 56px;
+    font-family: 'Inter', sans-serif;
+    color: #222;
+
+}
+
+/*video*/
+
+.div-contenedor {
+    border: 1px solid #ccc;
+    background-color: #fff; 
+    padding: 10px;        
+    margin: 20px auto;
+    width: 85%;            
+    max-width: 1200px;   
+}
+
+.contenedor-video {
+    width: 100%; 
+    margin: 0 auto;
+}
+
+.video-nota {
+    width: 100%;         
+    display: block;
+    box-shadow: none; 
+}
+
+.pie-video {
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;    
+    color: #333;
+    text-align: left;    
+}
+
+
+/* cuerpo noticia */
+.main-layout {
+    display: flex;
+    justify-content: center; 
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px; 
+    padding: 0 20px;
+}
+
+.cuerpo-nota {
+    flex: 1; 
+    max-width: 800px;
+    margin: 0; 
+    padding: 0;
+}
+
+p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 21px;       
+    color: #1a1a1a;       
+    margin-bottom: 30px; 
+    text-align: left;
+    line-height: 1.6; 
+}
+
+p strong {
+    font-weight: 700;
+    color: #000;
+}
+
+h2{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    font-size: 40px;            
+    margin: 45px 0 25px 0;
+    color: #000;
+    line-height: 1.2; 
+}
+
+h3{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    font-size: 25px;            
+    margin: 45px 0 25px 0;
+    color: #000;
+    line-height: 1.2; 
+}
+
+#foto-copetti{
+    width: 300px;
+    height: 300px;
+}
+
+
+/*aside*/
+.sidebar-noticias {
+    width: 320px;
+    min-width: 300px;
+    align-self: flex-start;
+}
+
+.seccion-titulo {
+    color: #8dbb25; 
+    font-size: 14px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.noticia-principal img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.lista-noticias {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-noticias li {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.numero {
+    color: #8dbb25;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 12px;
+    line-height: 1
+}
+
+.lista-noticias a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+
+/* Contenedor final: formularios */
+.seccion-final {
+    border-top: 4px solid #8dbb25;
+    background-color: #fff;
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 800px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#titulo-seccion-final{
+    background-color: #8dbb25;
+    color: #fff;
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.seccion-final legend {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.checkbox-goleador, 
+.formulario, 
+.equipo-fav {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f6f6f6;
+}
+
+#jugador1, #jugador2, #jugador3, #jugador4, #jugador5, #jugador6,
+#campo-nombre, #campo-mail, #campo-fecha-nac, #campo-tel,
+#equipo1, #equipo2, #equipo3, #equipo4, #equipo5 {
+    margin-bottom: 10px;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+
+.seccion-final label {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #444;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="date"],
+.formulario input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #999;
+    font-size: 14px;
+    margin-top: 5px;
+    box-sizing: border-box; 
+}
+
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.botones-form {
+    padding: 10px 0;
+    border: none 
+}
+
+
+.botones-form button[type="submit"] {
+    background-color: #8dbb25;
+    border: none;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.botones-form button[type="submit"]:hover {
+    background-color: #7aa31f;
+}
+
+.botones-form button[type="reset"] {
+    background: none;
+    border: none;
+    color: #858282;
+    text-decoration: underline;
+    font-size: 12px;
+    margin-top: 15px;
+    width: 100%;
+    display: block;
+}
+
+.botones-form button[type="reset"]:hover {
+    color: #c40303;
+}
+
+
+/*footer*/
+.div-footer{
+    background-color: rgb(44, 44, 44); 
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.footer-superior {
+    padding: 15px 0;
+}
+
+.contenedor-footer-legal {
+    color: white;
+    font-size: 13px;
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.footer-principal {
+    padding: 40px 0;
+}
+
+.contenedor-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.grid-4-columnas {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1.5fr; 
+    gap: 40px;
+}
+
+
+/* columna izquierda columna 1*/
+.columna-1 h3 {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.tapa-caja {
+    background-color: #6d6c6c;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.tapa-caja img {
+    width: 180px; 
+    height: auto;
+    display: block;
+}
+
+.btn-tapas {
+    background-color: #8dbb25;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    cursor: pointer;
+}
+
+/*columna 2 y 3*/
+.columna-2y3 ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.columna-2y3 li {
+    margin-bottom: 12px; 
+}
+
+.columna-2y3 a {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.columna-2y3 a.verde {
+    color: #8dbb25;
+}
+
+/*columna 4 */
+.caja-apps {
+    background-color: #6d6c6c;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.caja-apps p {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #999;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
