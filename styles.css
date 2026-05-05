@@ -165,49 +165,94 @@ a[Title="Spotify"]{
     padding: 0 20px;
 }
 
-.cuerpo-nota {
-    flex: 1; 
-    max-width: 800px;
-    margin: 0; 
-    padding: 0;
+.card-link {
+    text-decoration: none;   
+    width: 50%;
+    height: 50%;
 }
 
-p {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 21px;       
-    color: #1a1a1a;       
-    margin-bottom: 30px; 
-    text-align: left;
-    line-height: 1.6; 
+.play-btn {
+  background-color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 20px;
 }
 
-p strong {
-    font-weight: 700;
-    color: #000;
+.video-titulo {
+  color: white;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 1.2;
+  max-width: 80%;
 }
 
-h2{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 800;
-    font-size: 40px;            
-    margin: 45px 0 25px 0;
-    color: #000;
-    line-height: 1.2; 
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;                   
+  max-width: 600px;
+  margin-left: 0;   
+  margin-right: auto;      
 }
 
-h3{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 800;
-    font-size: 25px;            
-    margin: 45px 0 25px 0;
-    color: #000;
-    line-height: 1.2; 
+.video-card {
+  position: relative;       
+  background-color: #000;
+  overflow: hidden;
 }
 
-#foto-copetti{
-    width: 300px;
-    height: 300px;
+.video-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;           
 }
+
+.descripcion-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-end;       
+}
+
+#txt-temas-relacionados {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 15px;
+}
+
+.temas-relacionados {
+    display: flex;     
+    flex-wrap: wrap;   
+    gap: 10px;
+    border-bottom: 1px solid #dffb9e; 
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.btn-tema-relacionado {
+    background-color:  #f4ffe0;
+    color: #88bc1c;               
+    border: 1px solid #88bc1c;    
+    padding: 5px 15px;           
+    font-size: 14px;
+    border-radius: 8px;        
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
 
 
 /*aside*/
