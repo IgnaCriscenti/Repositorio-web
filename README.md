@@ -8,4 +8,3 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 Aprendizaje de semántica HTML5:
 https://www.freecodecamp.org/espanol/news/elementos-semanticos-html5-explicados/
-.
