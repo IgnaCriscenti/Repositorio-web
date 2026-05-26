@@ -254,94 +254,92 @@
     
                 <form action="/procesar-suscripcion" method="POST">
                 
-                    <div class="checkbox-goleador">
+                    <fieldset class="checkbox-goleador">
                         <legend>¿Quiénes creés que pelearán el título de goleador 2026?</legend>
 
-                        <fieldset id="jugador1">
+                        <div id="jugador1" class="control-jugador">
                             <input type="checkbox" id="copetti" name="goleadores" value="copetti">
                             <label for="copetti">Enzo Copetti</label>
-                        </fieldset>
+                        </div>
 
-                        <fieldset id="jugador2">
+                        <div id="jugador2" class="control-jugador">
                             <input type="checkbox" id="avalos" name="goleadores" value="avalos">
                             <label for="avalos">Gabriel Ávalos</label>
-                        </fieldset>
+                        </div>
 
-                        <fieldset id="jugador3">
+                        <div id="jugador3" class="control-jugador">
                             <input type="checkbox" id="merentiel" name="goleadores" value="merentiel">
                             <label for="merentiel">Miguel Merentiel</label>
-                        </fieldset>
+                        </div>
 
-                        <fieldset id="jugador4">
+                        <div id="jugador4" class="control-jugador">
                             <input type="checkbox" id="driussi" name="goleadores" value="driussi">
                             <label for="driussi">Sebastián Driussi</label>
-                        </fieldset>
+                        </div>
 
-                        <fieldset id="jugador5">
+                        <div id="jugador5" class="control-jugador">
                             <input type="checkbox" id="maravilla" name="goleadores" value="maravilla">
                             <label for="maravilla">Maravilla Martínez</label>
-                        </fieldset>
+                        </div>
 
-                        <fieldset id="jugador6">
+                        <div id="jugador6" class="control-jugador">
                             <input type="checkbox" id="ramirez" name="goleadores" value="ramirez">
                             <label for="ramirez">Juan Ignacio Ramírez</label>
-                        </fieldset>
-                    </div>
+                        </div>
+                    </fieldset>
 
-                    <hr>
-
-                    <div class="formulario">
+                    <fieldset class="formulario">
                         <legend>Datos para la suscripción a Olé:</legend>
                     
-                        <fieldset id="campo-nombre">
+                        <div id="campo-nombre" class="control-formulario">
                             <label for="nombre">Nombre completo:</label>
                             <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-                        </fieldset>
+                        </div>
 
-                        <fieldset id="campo-mail">
+                        <div id="campo-mail" class="control-formulario">
                             <label for="email">Correo electrónico:</label>
                             <input type="email" id="email" name="email" placeholder="usuario@correo.com" required>
-                        </fieldset>
+                        </div>
 
-                        <fieldset id="campo-fecha-nac">
+                        <div id="campo-fecha-nac" class="control-formulario">
                             <label for="nacimiento">Fecha de nacimiento:</label>
                             <input type="date" id="nacimiento" name="nacimiento" required>
-                        </fieldset>
+                        </div>
 
-                        <fieldset id="campo-tel">
+                        <div id="campo-tel" class="control-formulario">
                             <label for="telefono">Teléfono (Opcional):</label>
                             <input type="tel" id="telefono" name="telefono" placeholder="Ej: +54 9 341 123 4567">
-                        </fieldset>
-                    </div>
+                        </div>
+                    </fieldset>
 
-                    <div class="equipo-fav">
+                    <fieldset class="equipo-fav">
                         <legend>Elegí tu equipo favorito:</legend>
                     
-                        <fieldset id="equipo1">
+                        <div id="equipo1" class="control-equipo">
                             <input type="radio" id="central" name="equipo" value="central">
                             <label for="central">Rosario Central</label>
-                        </fieldset>
+                        </div>
 
-                        <fieldset id="equipo2">
+                        <div id="equipo2" class="control-equipo">
                             <input type="radio" id="newells" name="equipo" value="newells">
                             <label for="newells">Newell's</label>
-                        </fieldset>
+                        </div>
 
-                        <fieldset id="equipo3">
+                        <div id="equipo3" class="control-equipo">
                             <input type="radio" id="boca" name="equipo" value="boca">
                             <label for="boca">Boca</label>
-                        </fieldset>
+                        </div>
 
-                        <fieldset id="equipo4">
+                        <div id="equipo4" class="control-equipo">
                             <input type="radio" id="river" name="equipo" value="river">
                             <label for="river">River</label>
-                        </fieldset>
+                        </div>
 
-                        <fieldset id="equipo5">
+                        <div id="equipo5" class="control-equipo">
                             <input type="radio" id="otro" name="equipo" value="otro">
                             <label for="otro">Otro</label>
-                        </fieldset>
-                    </div>
+                        </div>
+                    </fieldset>
 
                     <br>
                     <div class="botones-form">
