@@ -77,7 +77,6 @@ a[Title="Spotify"]{
     align-items: stretch; 
     border-bottom: 1px solid #ccc;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    height: 35px; 
     padding-right: 55px;
 }
 
@@ -234,7 +233,8 @@ a[Title="Spotify"]{
 
 .temas-relacionados {
     display: flex;     
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
+    align-items: center;   
     gap: 10px;
     border-bottom: 1px solid #dffb9e; 
     padding-bottom: 20px;
@@ -345,15 +345,24 @@ a[Title="Spotify"]{
     background-color: #f6f6f6;
 }
 
-#jugador1, #jugador2, #jugador3, #jugador4, #jugador5, #jugador6,
-#campo-nombre, #campo-mail, #campo-fecha-nac, #campo-tel,
-#equipo1, #equipo2, #equipo3, #equipo4, #equipo5 {
-    margin-bottom: 10px;
-    padding: 0;
-    border: none;
-    background: none;
+.control-jugador,
+.control-formulario,
+.control-equipo{
+    margin-bottom: 12px;
 }
 
+.control-formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.control-jugador,
+.control-equipo{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
 
 .seccion-final label {
     font-size: 13px;
@@ -371,7 +380,7 @@ a[Title="Spotify"]{
     padding: 8px;
     border: 1px solid #999;
     font-size: 14px;
-    margin-top: 5px;
+    margin-top: 0;
     box-sizing: border-box; 
 }
 
@@ -438,6 +447,7 @@ input[type="radio"] {
     padding: 0 20px;
     display: flex; 
     justify-content: space-between; 
+    align-items: center;
 }
 
 .footer-principal {
