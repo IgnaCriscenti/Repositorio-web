@@ -550,6 +550,32 @@ input[type="radio"] {
     line-height: 1.5;
 }
 
+@media (min-width: 1029px) {
+    
+    .formulario {
+        display: flex;
+        flex-wrap: wrap;     
+        justify-content: space-between; 
+        gap: 20px 0;       
+    }
+
+    .formulario .control-formulario {
+        width: 45%; 
+        box-sizing: border-box;
+    }
+
+    .botones-form {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .botones-form button[type="submit"] {
+        max-width: 350px; 
+    }
+}
 
 @media (max-width: 767px) {
     .social-links, .user-display, .arg{
