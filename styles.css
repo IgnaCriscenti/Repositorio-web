@@ -374,14 +374,22 @@ a[Title="Spotify"]{
 
 .formulario input[type="text"],
 .formulario input[type="email"],
-.formulario input[type="date"],
-.formulario input[type="tel"] {
+.formulario input[type="number"],
+.formulario input[type="tel"],
+.formulario input[type="password"] {
     width: 100%;
     padding: 8px;
     border: 1px solid #999;
     font-size: 14px;
     margin-top: 0;
     box-sizing: border-box; 
+}
+
+.error-mensaje {
+    color: red;       
+    display: block;   
+    margin-top: 5px;   
+    font-size: 0.9rem;  
 }
 
 

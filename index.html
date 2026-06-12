@@ -288,30 +288,7 @@
                         </div>
                     </fieldset>
 
-                    <fieldset class="formulario">
-                        <legend>Datos para la suscripción a Olé:</legend>
                     
-                        <div id="campo-nombre" class="control-formulario">
-                            <label for="nombre">Nombre completo:</label>
-                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-                        </div>
-
-                        <div id="campo-mail" class="control-formulario">
-                            <label for="email">Correo electrónico:</label>
-                            <input type="email" id="email" name="email" placeholder="usuario@correo.com" required>
-                        </div>
-
-                        <div id="campo-fecha-nac" class="control-formulario">
-                            <label for="nacimiento">Fecha de nacimiento:</label>
-                            <input type="date" id="nacimiento" name="nacimiento" required>
-                        </div>
-
-                        <div id="campo-tel" class="control-formulario">
-                            <label for="telefono">Teléfono (Opcional):</label>
-                            <input type="tel" id="telefono" name="telefono" placeholder="Ej: +54 9 341 123 4567">
-                        </div>
-                    </fieldset>
-
                     <fieldset class="equipo-fav">
                         <legend>Elegí tu equipo favorito:</legend>
                     
@@ -339,6 +316,72 @@
                             <input type="radio" id="otro" name="equipo" value="otro">
                             <label for="otro">Otro</label>
                         </div>
+                    </fieldset>
+
+
+                    <fieldset class="formulario">
+                        <legend>Datos para la suscripción a Olé:</legend>
+                    
+                        <div id="campo-nombre" class="control-formulario">
+                            <label for="nombre">Nombre completo:</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre y apellido" required>
+                            <span class="error-mensaje" id="error-nombre"></span>
+                        </div>
+
+                        <div id="campo-mail" class="control-formulario">
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" id="email" name="email" placeholder="usuario@correo.com" required>
+                            <span class="error-mensaje" id="error-email"></span>
+                        </div>
+
+                        <div id="campo-contrasena" class="control-formulario">
+                            <label for="contrasena">Contraseña:</label>
+                            <input type="password" id="contrasena" name="contrasena" placeholder="Mínimo de 8 caracteres incluyendo números" required>
+                            <span class="error-mensaje" id="error-contrasena"></span>
+                        </div>
+
+                        <div id="campo-confirm-contrasena" class="control-formulario">
+                            <label for="confirm-contrasena">Confirmar contraseña:</label>
+                            <input type="password" id="confirm-contrasena" name="confirm-contrasena" placeholder="Repita su contraseña" required>
+                            <span class="error-mensaje" id="error-confirm-contrasena"></span>
+                        </div>
+
+                        <div id="campo-edad" class="control-formulario">
+                            <label for="edad">Edad:</label>
+                            <input type="number" id="edad" name="edad" placeholder="Solo para mayores de 18" required>
+                            <span class="error-mensaje" id="error-edad"></span>
+                        </div>
+
+                        <div id="campo-tel" class="control-formulario">
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Ej: +54 9 341 123 4567" required>
+                            <span class="error-mensaje" id="error-telefono"></span>
+                        </div>
+
+                        <div id="campo-direccion" class="control-formulario">
+                            <label for="direccion">Dirección:</label>
+                            <input type="text" id="direccion" name="direccion" placeholder="Calle y número" required>
+                            <span class="error-mensaje" id="error-direccion"></span>
+                        </div>
+
+                        <div id="campo-ciudad" class="control-formulario">
+                            <label for="ciudad">Ciudad:</label>
+                            <input type="text" id="ciudad" name="ciudad" placeholder="Nombre de su ciudad" required>
+                            <span class="error-mensaje" id="error-ciudad"></span>
+                        </div>
+
+                        <div id="campo-cod-post" class="control-formulario">
+                            <label for="cod-post">Codigo postal:</label>
+                            <input type="text" id="cod-post" name="cod-post" placeholder="Ej: 2000" required>
+                            <span class="error-mensaje" id="error-cod-post"></span>
+                        </div>
+
+                        <div id="campo-dni" class="control-formulario">
+                            <label for="dni">DNI:</label>
+                            <input type="number" id="dni" name="dni" placeholder="Sin puntos" required>
+                            <span class="error-mensaje" id="error-dni"></span>
+                        </div>
+
                     </fieldset>
 
                     <br>
@@ -429,6 +472,7 @@
     </footer>
     
 </body>
+<script src="index.js"></script>
 
 </html>
 
